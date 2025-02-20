@@ -1,8 +1,9 @@
 {
-  "name": "@saas/typescript-config",
-  "version": "0.0.0",
+  "name": "@saas/tsconfig",
+  "version": "0.0.1",
   "private": true,
   "license": "MIT",
+  "files": ["library.json"],
   "publishConfig": {
     "access": "public"
   }
