@@ -25,6 +25,7 @@ import { shutdownOrganization } from '@/http/routes/orgs/shutdown-organization'
 import { updateOrganization } from '@/http/routes/orgs/update-organization'
 
 import { createAccount } from './routes/auth/create-account'
+import { getOrganizationBilling } from './routes/billing/get-organization-billing'
 import { acceptInvite } from './routes/invites/accept-invite'
 import { createInvite } from './routes/invites/create-invite'
 import { getInvite } from './routes/invites/get-invite'
@@ -111,6 +112,8 @@ app.register(acceptInvite)
 app.register(rejectInvite)
 app.register(revokeInvite)
 app.register(getPendingInvites)
+
+app.register(getOrganizationBilling)
 
 app.listen({ port: env.SERVER_PORT }).then(() => {
   console.log('HTTP server running!')
