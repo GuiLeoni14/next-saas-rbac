@@ -8,6 +8,12 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  images: {
+    remotePatterns: [
+      { hostname: 'github.com' },
+      { hostname: 'avatars.githubusercontent.com' },
+    ],
+  },
 }
 
 export default nextConfig
