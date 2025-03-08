@@ -19,6 +19,7 @@
     "@radix-ui/react-slot": "^1.1.2",
     "@saas/auth": "0.0.1",
     "@saas/env": "0.0.1",
+    "@tanstack/react-query": "^5.67.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cookies-next": "^5.1.0",
