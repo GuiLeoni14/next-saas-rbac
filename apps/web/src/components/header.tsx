@@ -1,5 +1,6 @@
 import { Slash } from 'lucide-react'
 import Image from 'next/image'
+import { Suspense } from 'react'
 
 import rocketseatIcon from '@/assets/rocketseat-icon.svg'
 import { ability } from '@/auth/auth'
@@ -37,7 +38,9 @@ export async function Header() {
       <div className="flex items-center gap-4">
         <ThemeSwitcher />
         <Separator orientation="vertical" className="h-5" />
-        <ProfileButton />
+        <Suspense fallback={<p>Loading...</p>}>
+          <ProfileButton />
+        </Suspense>
       </div>
     </div>
   )
